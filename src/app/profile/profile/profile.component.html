@@ -1,0 +1,68 @@
+
+ 
+<form action="" class="form">
+    <div class="form-group">
+      <input type="text" class="form-control" placeholder="Enter git username" [(ngModel)]="username" name="username"
+        (keyup)="findProfile()">
+    </div>
+  
+  </form>
+  
+  <div *ngIf="profile">
+    <h3 class="text-center">USER'S PROFILE</h3>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        {{profile.name}} <small>({{profile.login}})</small>
+        <span *ngIf="profile.company">, Working at {{profile.company}}</span>, {{profile.location}}
+      </div>
+  
+      <div class="panel-body">
+        <div class="row">
+          <div class="col-md-6">
+            <img src="{{profile.avatar_url}}" class="rounded-circle img-responsive" width="300px" alt="profile img">
+          </div>
+  
+          <div class="col-md-6">
+            <ul class="list-group">
+              <li class="list-group-item" *ngIf="profile.bio">{{profile.bio}}</li>
+              <li class="list-group-item" *ngIf="profile.email"><a href="{{profile.email}}">{{profile.email}}</a> </li>
+              <li class="list-group-item" *ngIf="profile.blog"><a href="{{profile.blog}}">{{profile.blog}}</a></li>
+              <li class="list-group-item" *ngIf="profile.hireable">Available for hire</li>
+            </ul><br>
+  
+  
+  
+            <div>
+              <p>
+                <button class="btn btn-success"><span class="badge">{{profile.followers}}</span>Followers</button>
+                <button class="btn btn-info"><span class="badge">{{profile.following}}</span>Following</button>
+                <button class="btn btn-secondary"><span class="badge">{{profile.public_gists}}</span>Public Gists</button>
+                <button class="btn btn-warning"><span class="badge">{{profile.public_repos}}</span>Public Repos </button>
+              </p>
+            </div>
+            <br>
+            <div class="col-md-6">
+              <p>
+                <a href="{{profile.html_url}}" class="btn btn-primary">View Github Profile</a>
+              </p>
+            </div>
+          </div>
+        </div><hr>
+  
+          <div class="text text-center">
+            <h3 class="panel-title text-center">REPOSITORIES</h3>
+            
+            <div class="row">
+            <div class="panel-default col-md-3" style="width: 18rem" *ngFor="let repo of repos">
+              <ul class="panel-body list-group-flush">
+                <li class="list-group-item"><strong>{{repo.name}}</strong></li>
+                <li class="list-group-item"><a href="{{repo.html_url}}" class="btn btn-info">View project</a></li>
+              </ul>
+            </div><br>
+          
+        </div>
+          </div>
+        
+      </div>
+    </div>
+  </div>
