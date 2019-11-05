@@ -1,5 +1,6 @@
 import { ProfileService } from './../profile-service/profile.service';
-import { Component, OnInit } from '@angular/core';
+
+;import { Component, OnInit } from '@angular/core';
 
 
 @Component({
