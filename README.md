@@ -28,6 +28,9 @@ it is a simple app were some can easily seaCH githup repo for their project add 
   bootstrap
   Angular
 
+  ## licence
+  c
+
 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.12.
