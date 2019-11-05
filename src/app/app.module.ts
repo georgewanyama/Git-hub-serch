@@ -8,7 +8,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { ProfileComponent } from './profile/profile/profile.component';
 import { NavbarComponent } from './navbar/navbar/navbar.component';
 import { AboutComponent } from './about/about/about.component';
-import { from } from 'rxjs';
+import { FormsModule}from '@angular/forms';
 
 
 
@@ -28,7 +28,7 @@ import { from } from 'rxjs';
     HttpClientModule,
     FormsModule
   ],
-  providers: [],
+  providers: [ProfileService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
