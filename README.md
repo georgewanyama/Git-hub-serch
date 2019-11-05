@@ -10,7 +10,14 @@ search api
 
 it is a simple app were some can easily seaCH githup repo for their project add their number of repository just a simple app
 
-## 
+##  BDD
+ 
+ ENTER GIT USER NAME
+ INPUT USER GEORGEWANYAMA
+ VIEW PROJECT 
+ CLICK THE BUTTON
+ DISPLAY REPO
+ 
 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.12.
