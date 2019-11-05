@@ -29,7 +29,7 @@ it is a simple app were some can easily seaCH githup repo for their project add 
   Angular
 
   ## licence
-  c
+  copyright (c) l
 
 
 
