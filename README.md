@@ -3,7 +3,14 @@
 george wanyama
 
 ## title
+
 search api
+
+## Description
+
+it is a simple app were some can easily seaCH githup repo for their project add their number of repository just a simple app
+
+## 
 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.12.
