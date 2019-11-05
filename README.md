@@ -17,7 +17,10 @@ it is a simple app were some can easily seaCH githup repo for their project add 
  VIEW PROJECT 
  CLICK THE BUTTON
  DISPLAY REPO
- 
+  
+  ## BUGS
+
+  bugs will appear for the new user of the app
 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.12.
